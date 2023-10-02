@@ -152,11 +152,12 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >操作系统笔记</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="1-1操作系统的功能与概念"><a href="#1-1操作系统的功能与概念" class="headerlink" title="1.1操作系统的功能与概念"></a>1.1操作系统的功能与概念</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220513668-1694441115543-3.png" alt="image-20230911220513668"></p>
+                <hr>
+<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="1-1操作系统的功能与概念"><a href="#1-1操作系统的功能与概念" class="headerlink" title="1.1操作系统的功能与概念"></a>1.1操作系统的功能与概念</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220513668-1694441115543-3.png" alt="image-20230911220513668"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220700891-1694441222660-5.png" alt="image-20230911220700891"></p>
 <p>命令接口与程序接口都是用户接口</p>
 <h2 id="1-2操作系统的四个基本特征"><a href="#1-2操作系统的四个基本特征" class="headerlink" title="1.2操作系统的四个基本特征"></a>1.2操作系统的四个基本特征</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220756292.png" alt="image-20230911220756292"></p>
@@ -310,6 +311,30 @@
 <h2 id="3-11互斥锁"><a href="#3-11互斥锁" class="headerlink" title="3.11互斥锁"></a>3.11互斥锁</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230924194540222.png" alt="image-20230924194540222"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230924194742334.png" alt="image-20230924194742334"></p>
 <p>多核的情况中，因为另一个进程可能在其他进程循环忙的时候迅速使用完临界资源解锁，所以循环忙的进程可以在时间片未切换的情况  下获得临界资源，此时不需要切换上下文，反而代价会很低。</p>
+<h2 id="3-12信号量机制"><a href="#3-12信号量机制" class="headerlink" title="3.12信号量机制"></a>3.12信号量机制</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926201038895.png" alt="image-20230926201038895"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926201611123.png" alt="image-20230926201611123"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926201946553.png" alt="image-20230926201946553"></p>
+<p> <img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926202602250.png" alt="image-20230926202602250"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926202854848.png" alt="image-20230926202854848"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926203039183.png" alt="image-20230926203039183"></p>
+<h2 id="3-13用信号量机制实现进程互斥、同步、前驱关系"><a href="#3-13用信号量机制实现进程互斥、同步、前驱关系" class="headerlink" title="3.13用信号量机制实现进程互斥、同步、前驱关系"></a>3.13用信号量机制实现进程互斥、同步、前驱关系</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926203425904.png" alt="image-20230926203425904"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926204313903.png" alt="image-20230926204313903"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926205049814.png" alt="image-20230926205049814"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926205549144.png" alt="image-20230926205549144"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926205753917.png" alt="image-20230926205753917"></p>
+<h2 id="3-14生产者-消费者问题"><a href="#3-14生产者-消费者问题" class="headerlink" title="3.14生产者-消费者问题"></a>3.14生产者-消费者问题</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926211300958.png" alt="image-20230926211300958"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926211736759.png" alt="image-20230926211736759"></p>
+<p> <img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926212259185.png" alt="image-20230926212259185"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230926212516072.png" alt="image-20230926212516072"></p>
+<h2 id="3-15多生产者-多消费者问题"><a href="#3-15多生产者-多消费者问题" class="headerlink" title="3.15多生产者-多消费者问题"></a>3.15多生产者-多消费者问题</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230928214414666.png" alt="image-20230928214414666"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230928214949338.png" alt="image-20230928214949338"></p>
+<p>此时去掉互斥变量也可以正常运行。</p>
+<p>原因在于：本题中的缓冲区大小为1，在任何时刻，apple、orange、plate三个同步信号量中最多只有一个是1。因此在任何时刻最多只有一个进程的P操作不会被阻塞，并顺利地进入临界区…</p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230928215248454.png" alt="image-20230928215248454"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230928215432781.png" alt="image-20230928215432781"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230928215820368.png" alt="image-20230928215820368"></p>
+<h2 id="3-16吸烟者问题"><a href="#3-16吸烟者问题" class="headerlink" title="3.16吸烟者问题"></a>3.16吸烟者问题<img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230928220220777.png" alt="image-20230928220220777"></h2><p> <img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230928222828539.png" alt="image-20230928222828539"></p>
+<p>  <img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230928223018244.png" alt="image-20230928223018244"></p>
 
             </div>
 
