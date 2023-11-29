@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    锋哥的个人网站
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="LDF" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">LDF</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ldfgood" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="csdn" href="https://blog.csdn.net/weixin_64089712" target="_blank" rel="noopener">
+                            <i class="icon fa fa-csdn"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >镜像安装centos7以及编译安装linux内核</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <hr>
+<h1 id="Centos安装说明"><a href="#Centos安装说明" class="headerlink" title="Centos安装说明"></a>Centos安装说明</h1><h2 id="Centos介绍"><a href="#Centos介绍" class="headerlink" title="Centos介绍"></a>Centos介绍</h2><p>CentOS是一个基于Red Hat Enterprise Linux (RHEL)的开源操作系统，它提供了一个稳定，安全，高性能和兼容的平台，适用于各种企业级应用和云计算环境。CentOS的名称来源于Community Enterprise Operating System，意味着它是由社区维护和支持的，而不是由商业公司控制的。CentOS完全遵循RHEL的源代码，因此可以与RHEL兼容和互换，但不需要付费订阅或授权。CentOS的目标是成为一个可靠，稳定和更新的操作系统，为用户提供一个免费的选择。</p>
+<p>CentOS的特点和优势：</p>
+<p>\1. CentOS是一个成熟和稳定的操作系统，它有着长期的支持周期和安全更新。CentOS 7的支持周期为10年（2014-2024），CentOS 8的支持周期为8年（2019-2027）。</p>
+<p>2.CentOS是一个灵活和可定制的操作系统，它允许用户根据自己的需求选择不同的软件包和版本。CentOS提供了多个软件仓库，包括基础仓库，更新仓库，附加仓库，额外仓库和第三方仓库，以及多个安装媒体，包括DVD，最小化安装，网络安装和Live CD&#x2F;DVD&#x2F;USB。</p>
+<p>​    3.CentOS是一个高性能和高效的操作系统，它利用了最新的技术和特性，例如SELinux，Systemd，Firewalld，KVM，Docker，Podman等。CentOS还支持多种硬件平台，包括x86_64，aarch64，ppc64le等。</p>
+<p>4.CentOS是一个兼容和互换的操作系统，它可以与RHEL和其他基于RHEL的发行版（如Fedora，Oracle Linux等）无缝协作。CentOS还可以运行在各种虚拟化和云计算平台上，例如VMware，Hyper-V，Amazon Web Services，Microsoft Azure等。</p>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>本次安装的版本是centos7.4对应的内核版本是3.10.0-693，下载链接是<a target="_blank" rel="noopener" href="https://vault.centos.org/7.4.1708/isos/x86_64/">https://vault.centos.org/7.4.1708/isos/x86_64/</a></p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image002.jpg" alt="img"></p>
+<p>图 1 centos7.4的镜像下载地址</p>
+<p>为了加快下载速度，将下载地址替换为国内的源：</p>
+<p><a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/centos/7/isos/x86_64/">http://mirrors.aliyun.com/centos/7/isos/x86_64/</a></p>
+<p><a target="_blank" rel="noopener" href="http://mirrors.163.com/centos/7/isos/x86_64/">http://mirrors.163.com/centos/7/isos/x86_64/</a></p>
+<p><a target="_blank" rel="noopener" href="http://ftp.sjtu.edu.cn/centos/7/isos/x86_64/">http://ftp.sjtu.edu.cn/centos/7/isos/x86_64/</a></p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image004.jpg" alt="img"></p>
+<p>图 2 linux内核源码的下载地址</p>
+<p>内核源码的下载地址如下</p>
+<p><a target="_blank" rel="noopener" href="https://www.kernel.org/">https://www.kernel.org/</a></p>
+<p>内核安装版本 4.14.330</p>
+<p>本次实验的环境是VMware Workstation 安装的系统是centos7.4 源内核版本是3.10.0-693，升级为4.14.330</p>
+<h2 id="镜像安装流程"><a href="#镜像安装流程" class="headerlink" title="镜像安装流程"></a>镜像安装流程</h2><p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image006.jpg" alt="img"></p>
+<p>图 3 安装界面</p>
+<p>选择语言部分直接选择简体中文就行</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image008.jpg" alt="img"></p>
+<p>图 4 选择语言</p>
+<p>直接选择上海市区就行，并打开网络时间。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image010.jpg" alt="img"></p>
+<p>图 5 选择时区以及时间</p>
+<p>选择汉语布局就行，并测试布局配置是否合适。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image012.jpg" alt="img"></p>
+<p>图 6 选择键盘布局</p>
+<p>需要打开以太网连接</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image014.jpg" alt="img"></p>
+<p>图 7 配置主机名以及网络</p>
+<p>选择50g的空间并选择让其自动配置分区</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image016.jpg" alt="img"></p>
+<p>图 8 系统安装位置配置</p>
+<p>根据自己的需求选择安装软件，我这里就选择带有Gui的服务器。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image018.jpg" alt="img"></p>
+<p>图 9 选择安装软件</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image020.jpg" alt="img"></p>
+<p>图 10 开始安装</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image022.jpg" alt="img"></p>
+<p>图 11 配置root密码以及创建用户</p>
+<p>配置root密码，我设置了我常用的密码。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image024.jpg" alt="img"></p>
+<p>图 12 配置root密码</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image026.jpg" alt="img"></p>
+<p>图 13 创建新用户</p>
+<p>安装成功进入下一步重启</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image028.jpg" alt="img"></p>
+<p>图 14 安装成功</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image030.jpg" alt="img"></p>
+<p>图 15 初始设置</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image032.jpg" alt="img"></p>
+<p>图 16 同意许可协议</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image034.jpg" alt="img"></p>
+<p>图 17 网络设置</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image036.jpg" alt="img"></p>
+<p>图 18 完成初始设置</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image038.jpg" alt="img"></p>
+<p>图 19 登录</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image040.jpg" alt="img"></p>
+<p>图 20 桌面</p>
+<h2 id="编译安装内核源码"><a href="#编译安装内核源码" class="headerlink" title="编译安装内核源码"></a>编译安装内核源码</h2><p>为什么要编译内核</p>
+<p>需要新功能的支持：</p>
+<p>在生产环境中，突然会需要使用一些新的功能，但是原有的内核并不支持此功能，这是就需要重新编译出一个新的内核来提供对此新功能的支持，比如虚拟化、iptables功能必须要在2.4.X以上版本的内核中才支持。</p>
+<p>原核心太过于臃肿：</p>
+<p>原来安装的内核中，有很多不常用甚至基本上用不到的功能支持，而这些功能又会使内核文件变得很大，这时要将此变成一个简化切功能够用的内核就需要进行重新编译。</p>
+<p>与硬件搭配的稳定性：</p>
+<p>很多情况下，系统内核中默认一般默认支持的CPU类型为Inter，但在其它厂商，如AMD或者是较新的CPU硬件上使用此系统，可能就不能很好的支持，且不稳定。因此就需要重新编译内核来支持最新的硬件驱动。</p>
+<p>其它特殊需求：</p>
+<p>linux除了在pc机上运行，当然也能支持一些其它设备，比如嵌入式的APM、智能手机等，这时或许就要进行重新编译支持的CPU架构来支持这些特殊需求。</p>
+<p>总结一点：kernel的作业就是所需要的硬件支持，因此在此基础上只加需要的功能，来实现内核文件的短小精干。</p>
+<h2 id="内核源码编译安装流程"><a href="#内核源码编译安装流程" class="headerlink" title="内核源码编译安装流程"></a>内核源码编译安装流程</h2><p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image042.jpg" alt="img"></p>
+<p>图 21 查看内核版本</p>
+<p>准备编译环境</p>
+<p><strong>yum -y groups install “Development Tools”</strong></p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image044.jpg" alt="img"></p>
+<p>图 22 准备编译环境1</p>
+<p><strong>yum -y install ncurses-devel elfutils-libelf-devel bc openssl-devel.x86_64</strong></p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image046.jpg" alt="img"></p>
+<p>图 23 准备编译环境2</p>
+<p><strong>Cd linux-4.14.330&#x2F;</strong></p>
+<p>进入到源码目录。</p>
+<p>使用make menuconfig 命令进行菜单化界面来选择内核功能。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image048.jpg" alt="img"></p>
+<p>图 24 选择内核功能</p>
+<p>这里就按照默认的选择来安装之后选择save后选择ok（生成了.config文件）再选择exit退出到终端界面.</p>
+<p><strong>make -j4</strong></p>
+<p>开始编译，编译时长很久，我这次要一个小时才编译完。</p>
+<p>编译并安装内核模块。</p>
+<p><strong>make modules_install</strong></p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image050.jpg" alt="img"></p>
+<p>图 25 编译安装内核模块</p>
+<p><strong>make install</strong></p>
+<p>安装内核。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image052.jpg" alt="img"></p>
+<p>图 26 安装内核</p>
+<p><strong>sudo awk -F&#39; ‘$1&#x3D;&#x3D;”menuentry “ {print i++ “ : “ $2}’ &#x2F;etc&#x2F;grub2.cfg</strong></p>
+<p><strong>sudo grub2-set-default 0</strong></p>
+<p><strong>sudo grub2-mkconfig -o &#x2F;boot&#x2F;grub2&#x2F;grub.cfg</strong></p>
+<p>执行这几条命令设置开机自启动。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image054.jpg" alt="img"></p>
+<p>图 27 设置为开机自启动</p>
+<p>可以看到开机自启动的内核版本为4.14.330</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image056.jpg" alt="img"></p>
+<p>图 28 查看开机自启动的内核版本</p>
+<p>重启后查看内核版本。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/clip_image058.jpg" alt="img"></p>
+<p>图 29 查看内核版本</p>
+<p>内核源码编译安装完成。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://blog.ldf.icu/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://blog.ldf.icu/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85centos7%E4%BB%A5%E5%8F%8A%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85linux%E5%86%85%E6%A0%B8/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

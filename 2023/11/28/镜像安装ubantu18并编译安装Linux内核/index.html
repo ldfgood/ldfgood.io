@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    锋哥的个人网站
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="LDF" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">LDF</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ldfgood" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="csdn" href="https://blog.csdn.net/weixin_64089712" target="_blank" rel="noopener">
+                            <i class="icon fa fa-csdn"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Ubuntu 18.04的镜像与源码的安装说明</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <hr>
+<h1 id="Ubuntu-18-04的镜像与源码的安装说明"><a href="#Ubuntu-18-04的镜像与源码的安装说明" class="headerlink" title="Ubuntu 18.04的镜像与源码的安装说明"></a>Ubuntu 18.04的镜像与源码的安装说明</h1><h2 id="Ubuntu介绍"><a href="#Ubuntu介绍" class="headerlink" title="Ubuntu介绍"></a>Ubuntu介绍</h2><p>Debian是一种自由的操作系统，它基于Linux内核和GNU项目的软件。Debian的目标是提供一个稳定、安全、高效和易于使用的系统，适用于各种硬件平台和应用场景。Debian的特点包括：</p>
+<p>\1. 丰富的软件包：Debian拥有超过60000个软件包，涵盖了各个领域，如办公、教育、游戏、编程、科学、多媒体等。用户可以通过apt工具方便地安装和更新软件包。</p>
+<p>\2. 多架构支持：Debian支持多种处理器架构，如x86、x86_64、arm、mips、ppc等。用户可以根据自己的硬件选择合适的版本。</p>
+<p>\3. 社区驱动：Debian是一个由志愿者组成的社区项目，遵循自由软件的理念和标准。任何人都可以参与到Debian的开发和维护中，或者提供反馈和建议。</p>
+<p>\4. 发行版分支：Debian提供了三个发行版分支，分别是稳定版（stable）、测试版（testing）和不稳定版（unstable）。稳定版是经过充分测试和验证的版本，适合于生产环境和长期使用。测试版是包含了最新软件包的版本，适合于喜欢尝试新功能的用户。不稳定版是开发者使用的版本，可能存在一些错误和不兼容性。</p>
+<p>\5. 安全更新：Debian为稳定版提供了及时的安全更新，修复了已知的漏洞和威胁。用户可以通过apt工具自动获取和安装安全更新。</p>
+<h2 id="镜像与linux内核下载"><a href="#镜像与linux内核下载" class="headerlink" title="镜像与linux内核下载"></a>镜像与linux内核下载</h2><p><a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/ubuntu-releases/18.04/">http://mirrors.aliyun.com/ubuntu-releases/18.04/</a></p>
+<p>Ubuntu镜像的下载链接</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image002.jpg" alt="img"></p>
+<p>图 1 Ubuntu操作系统的镜像下载</p>
+<p>Linux的内核源码下载链接4.19.299。</p>
+<p><a target="_blank" rel="noopener" href="https://www.kernel.org/">The Linux Kernel Archives</a></p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image004.jpg" alt="img"></p>
+<p>图 2 linux内核源码的下载</p>
+<h2 id="Ubuntu的镜像安装流程"><a href="#Ubuntu的镜像安装流程" class="headerlink" title="Ubuntu的镜像安装流程"></a>Ubuntu的镜像安装流程</h2><p>开始安装Ubuntu操作系统，选择简体中文以及点击开始安装Ubuntu。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image006.jpg" alt="img"></p>
+<p>图 3 选择语言以及开始安装操作系统</p>
+<p>选择汉语布局，并测试键盘布局是否合适。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image008.jpg" alt="img"></p>
+<p>图 4 选择键盘布局</p>
+<p>然后选择继续。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image010.jpg" alt="img"></p>
+<p>图 5 选择安装应用</p>
+<p>选择正常安装，然后选择继续。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image012.jpg" alt="img"></p>
+<p>图 6 选择安装类型</p>
+<p>根据需求选择安装类型，这里选择清除整个磁盘并安装Ubuntu，后选择现在安装。并选择继续。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image014.jpg" alt="img"></p>
+<p>图 7 选择</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image016.jpg" alt="img"></p>
+<p>图 8 选择时区</p>
+<p>选择上海时区后选择继续。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image018.jpg" alt="img"></p>
+<p>图 9 输入用户名与密码</p>
+<p>在这边输入用户名，密码，点击继续。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image020.jpg" alt="img"></p>
+<p>图 10 开始安装操作系统</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image022.jpg" alt="img"></p>
+<p>图 11 安装成功</p>
+<h2 id="内核编译安装"><a href="#内核编译安装" class="headerlink" title="内核编译安装"></a>内核编译安装</h2><p><strong>Uname -r</strong> 查看内核版本可见本系统的初始内核版本是5.4.0-84-generic。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image024.jpg" alt="img"></p>
+<p>图 12 查看内核版本</p>
+<p>下载安装依赖</p>
+<p><strong>sudo apt-get install gcc make libncurses5-dev openssl libssl-dev</strong> </p>
+<p><strong>sudo apt-get install build-essential</strong> </p>
+<p><strong>sudo apt-get install pkg-config</strong></p>
+<p><strong>sudo apt-get install libc6-dev</strong></p>
+<p><strong>sudo apt-get install bison</strong></p>
+<p><strong>sudo apt-get install flex</strong></p>
+<p><strong>sudo apt-get install libelf-dev</strong></p>
+<p>安装过程中可能出现图12所示的报错，是因为链接不到镜像源。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image026.jpg" alt="img"></p>
+<p>图 13 安装依赖错误情况</p>
+<p>如果碰到以上问题可以进入软件更新，选择合适的镜像源。如下所示：</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image028.jpg" alt="img"></p>
+<p>图 14 修改镜像源</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image030.jpg" alt="img"></p>
+<p>图 15 安装依赖</p>
+<p>进入源码目录</p>
+<p><strong>Cd linux-4.19.299&#x2F;</strong></p>
+<p><strong>Make menuconfig</strong></p>
+<p>开始准备配置文件，但是又出报错了</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image032.jpg" alt="img"></p>
+<p>图 16 报错</p>
+<p>似乎是因为屏幕太小显示不出配置界面，所以我把虚拟机的界面尺寸调大。</p>
+<p>原来是：</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image034.jpg" alt="img"></p>
+<p>图 17 虚拟机画面</p>
+<p>安装VMware Tools后的画面是：</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image036.jpg" alt="img"></p>
+<p>图 18 安装VMware Tools后的画面</p>
+<p>之后再输入Make menuconfig时就可以正常看到配置界面了。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image038.jpg" alt="img"></p>
+<p>图 19  配置界面</p>
+<p>直接按照默认的来安装就行，所以直接save然后ok 然后exit就可以了，本次操作生成了.config文件。</p>
+<p>然后直接</p>
+<p><strong>sudo make</strong> </p>
+<p>开始编译，结果编译的时候报错：make[1]: *** 没有规则可制作目标“<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=debian&spm=1001.2101.3001.7020">debian</a>&#x2F;canonical-certs.pem”，由“certs&#x2F;x509_certificate_list” 需求。 停止。</p>
+<p>将.config文件中的 SYSTEM_TRUSTED引号中的内容删除。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image040.jpg" alt="img"></p>
+<p>图 20 报错信息</p>
+<p>删除红色框的内容即可</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image042.jpg" alt="img"></p>
+<p>图 21 .config文件中的删除内容</p>
+<p>继续编译</p>
+<p><strong>sudo make</strong> </p>
+<p>为了加速可以改为</p>
+<p><strong>sudo make -j4</strong></p>
+<p>安装内核模块</p>
+<p><strong>sudo make modules_install</strong></p>
+<p>安装内核</p>
+<p><strong>sudo make install</strong></p>
+<p><strong>sudo mkinitramfs -o &#x2F;boot&#x2F;initrd.img-4.19.299</strong></p>
+<p><strong>sudo update-initramfs -c -k 4.19.299</strong></p>
+<p><strong>sudo update-grub2</strong></p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image044.jpg" alt="img"></p>
+<p>图 22 安装内核</p>
+<p>安装成功。</p>
+<p>查看内核的版本发现还是原来的版本。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image046.jpg" alt="img"></p>
+<p>图 23 查看内核版本</p>
+<p>这时候我们需要查看内核的启动顺序和内核ID。</p>
+<p>单引号内的为我们需要的内容需要记下。</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image048.jpg" alt="img"></p>
+<p>图 24 当前使用的内核id</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image050.jpg" alt="img"></p>
+<p>图 25 查看内核id</p>
+<p>红色框部分为咱们安装的内核的内核id</p>
+<p><strong>Sudo vi &#x2F;etc&#x2F;default&#x2F;grub</strong></p>
+<p>将GRUB_DEFAULT的参数改为”之前单引号的内容&gt;你安装的内核的内核ID”</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image052.jpg" alt="img"></p>
+<p>图 26 修改参数</p>
+<p>sudo update-grub</p>
+<p>然后重启再验证</p>
+<p>Uname -r</p>
+<p><img src="/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/clip_image054.jpg" alt="img"></p>
+<p>图 27 查看当前内核版本</p>
+<p>安装完成</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://blog.ldf.icu/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://blog.ldf.icu/2023/11/28/%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85ubantu18%E5%B9%B6%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Linux%E5%86%85%E6%A0%B8/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
