@@ -178,6 +178,7 @@
 <p><img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/7f0571735f303a6bc99a73cbfe9e261a.jpeg" alt="img"></p>
 <p>选用了第11层的输出作为从yolov8中提取的特征图</p>
 <p><img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/clip_image002.png" alt="img"></p>
+<p><img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20240120130707458.png" alt="image-20240120130707458"></p>
 <p><img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20231112133030202.png" alt="image-20231112133030202"></p>
 <p>sk-assignment</p>
 <p>一起卷积呢？</p>
@@ -190,6 +191,48 @@
 <p>​		图片则交给yolov8提取信息</p>
 <p>只有图片的</p>
 <p>​	输入给图片剩下交给yolov8</p>
+<p>yolov8n-pose   shift_gcnpp 速度如下:</p>
+<img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20231203131620087.png" alt="image-20231203131620087" style="zoom:50%;">
+
+<p>yolov8n-pose.pt stgcnpp 速度如下:</p>
+<img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20231203131420668.png" alt="image-20231203131420668" style="zoom:50%;">
+
+<p> 两者差异不大:</p>
+<p>shift-gcnpp只能在nvidia的gpu上运行（要有cuda）</p>
+<p>运行结构</p>
+<p>（模型结构）：</p>
+<p>传入特征图-&gt;yolo-&gt;bytetraker(FT-partition)</p>
+<p>可能可以使用稀疏矩阵计算</p>
+<p>yolov8x-pose-p6版的MISNET，中间帧层为12，中间帧通道数为657。</p>
+<p><img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20240123195141571.png" alt="image-20240123195141571"></p>
+<p>yolov8n-pose版的MISNET，中间帧层为12，中间帧的通道数为145。</p>
+<p><img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20240123195234296.png" alt="image-20240123195234296"></p>
+<p>[ A 43: falling down,A 9: stand up,A 12: writing,A 27 jump up,A 28 : phone call,A 8: sit down,A 6 : pick up A 29 : play with phone ]</p>
+<p>3.9</p>
+<p>老师建议1：</p>
+<p>去掉早期融合那个分支</p>
+<p>或者在建立热图的时候增加权重使得最近帧的权重更大。</p>
+<p>老师建议2：</p>
+<p>把数据集整合为摔倒和不是摔倒</p>
+<p>老师建议3:</p>
+<p>交叉注意力等特征融合模块</p>
+<p>老师建议4:</p>
+<p>剪模型，跳帧，</p>
+<p>追踪算法太慢</p>
+<p>covert_h_numba，在cpu上做加速更快</p>
+<img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20240317202237893.png" alt="image-20240317202237893" style="zoom:50%;">
+
+<p>原本的陈锐写的只在cpu上面的</p>
+<img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20240317202342946.png" alt="image-20240317202342946" style="zoom:50%;">
+
+
+
+<p>nuomba加gpu的</p>
+<img src="/2023/07/30/%E5%A4%A7%E5%88%9B%E6%80%9D%E8%80%83/image-20240317202434796.png" alt="image-20240317202434796" style="zoom:50%;">
+
+
+
+<p>应该热图形式比较好，因为可以依赖姿态识别程度较低</p>
 
             </div>
 

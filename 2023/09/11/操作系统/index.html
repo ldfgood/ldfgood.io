@@ -160,18 +160,20 @@
 <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="1-1操作系统的功能与概念"><a href="#1-1操作系统的功能与概念" class="headerlink" title="1.1操作系统的功能与概念"></a>1.1操作系统的功能与概念</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220513668-1694441115543-3.png" alt="image-20230911220513668"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220700891-1694441222660-5.png" alt="image-20230911220700891"></p>
 <p>命令接口与程序接口都是用户接口</p>
-<h2 id="1-2操作系统的四个基本特征"><a href="#1-2操作系统的四个基本特征" class="headerlink" title="1.2操作系统的四个基本特征"></a>1.2操作系统的四个基本特征</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220756292.png" alt="image-20230911220756292"></p>
+<h2 id="1-2操作系统的四个基本特征"><a href="#1-2操作系统的四个基本特征" class="headerlink" title="1.2操作系统的四个基本特征"></a>1.2操作系统的四个基本特征</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240623211746034.png" alt="image-20240623211746034"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220756292.png" alt="image-20230911220756292"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911220338410-1694441020754-1.png" alt="image-20230911220338410"></p>
 <h2 id="1-3操作系统的发展与分类"><a href="#1-3操作系统的发展与分类" class="headerlink" title="1.3操作系统的发展与分类"></a>1.3操作系统的发展与分类</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911223629023.png" alt="image-20230911223629023"></p>
 <h2 id="1-4操作系统的运行机制"><a href="#1-4操作系统的运行机制" class="headerlink" title="1.4操作系统的运行机制"></a>1.4操作系统的运行机制</h2><p>​       如果cpu处于用户态的时候收到来着应用程序的内核指令时这个非法事件会引发一个中断信号，当cpu检测到中断信号时，会立即转变为核心态，并停止运行当前运行的应用程序，转而运行处理中断信号的内核程序。</p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911225830366.png" alt="image-20230911225830366"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230911230007871.png" alt="image-20230911230007871"></p>
-<h2 id="1-5中断与异常"><a href="#1-5中断与异常" class="headerlink" title="1.5中断与异常"></a>1.5中断与异常</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912205307711.png" alt="image-20230912205307711"></p>
+<h2 id="1-5中断与异常"><a href="#1-5中断与异常" class="headerlink" title="1.5中断与异常"></a>1.5中断与异常</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240624163800430.png" alt="image-20240624163800430"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912205307711.png" alt="image-20230912205307711"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912210037448.png" alt="image-20230912210037448"></p>
 <p>中断的基本原理</p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912210312959.png" alt="image-20230912210312959"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912210504924.png" alt="image-20230912210504924"></p>
-<h2 id="1-6系统调用"><a href="#1-6系统调用" class="headerlink" title="1.6系统调用"></a>1.6系统调用</h2><p>与共享资源的有关的操作都是由擦偶哦在系统内核统一管理，因此凡是与共享资源有关的操作，都必须通过系统调用的方式项操作系统内核提取服务请求。以保证系统的安全性与稳定性，防止用户进行非法操作。</p>
+<h2 id="1-6系统调用"><a href="#1-6系统调用" class="headerlink" title="1.6系统调用"></a>1.6系统调用</h2><p>与共享资源的有关的操作都是由操作系统内核统一管理，因此凡是与共享资源有关的操作，都必须通过系统调用的方式项操作系统内核提取服务请求。以保证系统的安全性与稳定性，防止用户进行非法操作。</p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912211533707.png" alt="image-20230912211533707"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912212431706.png" alt="image-20230912212431706"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912212706404.png" alt="image-20230912212706404"></p>
@@ -191,6 +193,7 @@
 <p>第二类虚拟机管理程序的内核态部分是以虚拟机驱动程序的形式加载在操作系统内核中的</p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912222927050.png" alt="image-20230912222927050"></p>
 <p> <img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230912231012066.png" alt="image-20230912231012066"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240625162724742.png" alt="image-20240625162724742"></p>
 <h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><h2 id="2-1进程的概念、组成、特征"><a href="#2-1进程的概念、组成、特征" class="headerlink" title="2.1进程的概念、组成、特征"></a>2.1进程的概念、组成、特征</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230914210121311.png" alt="image-20230914210121311"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230914210629184.png" alt="image-20230914210629184"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230914210915432.png" alt="image-20230914210915432"></p>
@@ -222,6 +225,7 @@
 <p> <strong>第五小点</strong>的解决方案以第一种为准，即一个通道允许多个写进程，一个读进程，但是从实际应用的角度看多个写进程多个读进程的说法没有错。<img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230918215839838.png" alt="image-20230918215839838"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230918220729417.png" alt="image-20230918220729417"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230918220526896.png" alt="image-20230918220526896"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240626121952657.png" alt="image-20240626121952657"></p>
 <h2 id="2-5线程的概念"><a href="#2-5线程的概念" class="headerlink" title="2.5线程的概念"></a>2.5线程的概念</h2><p> <img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230919204420208.png" alt="image-20230919204420208"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230919204755224.png" alt="image-20230919204755224"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20230919205125783.png" alt="image-20230919205125783"></p>
@@ -375,7 +379,46 @@
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20231008140839699.png" alt="image-20231008140839699"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20231008141243814.png" alt="image-20231008141243814"></p>
 <p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20231008141355503.png" alt="image-20231008141355503"></p>
-<h1 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h1>
+<h1 id="第四章-内存管理"><a href="#第四章-内存管理" class="headerlink" title="第四章 内存管理"></a>第四章 内存管理</h1><p>这里只有笔记的某一页，全部的需要去看pdf </p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240708163711721.png" alt="image-20240708163711721"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240708163738113.png" alt="image-20240708163738113"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240708210819377.png" alt="image-20240708210819377"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240708210942822.png" alt="image-20240708210942822"></p>
+<h2 id="动态分区算法"><a href="#动态分区算法" class="headerlink" title="动态分区算法"></a>动态分区算法</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240709205631071.png" alt="image-20240709205631071"></p>
+<h2 id="分页存储管理"><a href="#分页存储管理" class="headerlink" title="分页存储管理"></a>分页存储管理</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240709211433168.png" alt="image-20240709211433168"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240709211828817.png" alt="image-20240709211828817"></p>
+<img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240709212047057.png" alt="image-20240709212047057" style="zoom:33%;">
+
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240709213756432.png" alt="image-20240709213756432"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240711192731903.png" alt="image-20240711192731903"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240711192941842.png" alt="image-20240711192941842"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240711202304691.png" alt="image-20240711202304691"></p>
+<h2 id="基本分段存储管理"><a href="#基本分段存储管理" class="headerlink" title="基本分段存储管理"></a>基本分段存储管理</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240711204953052.png" alt="image-20240711204953052"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240711205128834.png" alt="image-20240711205128834"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240711205312059.png" alt="image-20240711205312059"></p>
+<h2 id="段页式存储管理"><a href="#段页式存储管理" class="headerlink" title="段页式存储管理"></a>段页式存储管理</h2><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240711210045699.png" alt="image-20240711210045699"></p>
+<h1 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h1><p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240714111925171.png" alt="image-20240714111925171"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240714121100371.png" alt="image-20240714121100371"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240714124001523.png" alt="image-20240714124001523"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240714135723293.png" alt="image-20240714135723293"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240714135902385.png" alt="image-20240714135902385"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240714143523850.png" alt="image-20240714143523850"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240715200845433.png" alt="image-20240715200845433"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240715201018834.png" alt="image-20240715201018834"></p>
+<h1 id="IO管理"><a href="#IO管理" class="headerlink" title="IO管理"></a>IO管理</h1><p>io控制方式</p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240716203121459.png" alt="image-20240716203121459"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240716205944687.png" alt="image-20240716205944687"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240716221121464.png" alt="image-20240716221121464"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240716221407863.png" alt="image-20240716221407863"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240717210901824.png" alt="image-20240717210901824"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240717211100297.png" alt="image-20240717211100297"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240717211818447.png" alt="image-20240717211818447"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240718155456376.png" alt="image-20240718155456376"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240718160825832.png" alt="image-20240718160825832"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240718162128319.png" alt="image-20240718162128319"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240718162831729.png" alt="image-20240718162831729"></p>
+<p><img src="/2023/09/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20240718180106081.png" alt="image-20240718180106081"></p>
+
             </div>
 
             <!-- Post Comments -->
